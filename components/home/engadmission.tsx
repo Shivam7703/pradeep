@@ -89,7 +89,7 @@ const admissionsData: AdmissionCategory[] = [
         desc: 'Selection guidance targeting institutes with strong corporate exposure and placement records.'
       }
     ],
-    popularColleges: ['IIMs (CAT Requiorange)', 'XLRI Jamshedpur', 'NMIMS Mumbai', 'SIBM Pune', 'Great Lakes']
+    popularColleges: ['IIMs (CAT Required)', 'XLRI Jamshedpur', 'NMIMS Mumbai', 'SIBM Pune', 'Great Lakes']
   }
 ];
 
@@ -258,11 +258,11 @@ export default function AdmissionsIndiaSection(): React.JSX.Element {
             <form onSubmit={handleFormSubmit} className="space-y-3">
               <div>
                 <label className="block text-xs font-medium text-zinc-700 mb-1">Student Name</label>
-                <input requiorange type="text" placeholder="Enter full name" className="w-full px-3 py-2 border border-zinc-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+                <input required type="text" placeholder="Enter full name" className="w-full px-3 py-2 border border-zinc-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none" />
               </div>
               <div>
                 <label className="block text-xs font-medium text-zinc-700 mb-1">Phone / WhatsApp</label>
-                <input requiorange type="tel" placeholder="+91 98765 43210" className="w-full px-3 py-2 border border-zinc-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+                <input required type="tel" placeholder="+91 98765 43210" className="w-full px-3 py-2 border border-zinc-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none" />
               </div>
               <div>
                 <label className="block text-xs font-medium text-zinc-700 mb-1">Course Interested In</label>
