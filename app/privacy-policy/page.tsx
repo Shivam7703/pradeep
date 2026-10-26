@@ -127,7 +127,7 @@ const contactDetails = [
   { label: "Address", value: "Vasant Kunj, New Delhi - 110070" },
 ];
 
-function Page() {
+export default function Page() {
   return (
     <main className="min-h-screen bg-white px-5 py-12 text-neutral-800 sm:px-8 sm:py-16">
       <div className="mx-auto w-full max-w-3xl">
