@@ -33,60 +33,60 @@ interface AdmissionCategory {
 const admissionsData: AdmissionCategory[] = [
   {
     id: 'engineering',
-    title: 'Engineering (B.Tech / M.Tech)',
+    title: 'Engineering Admissions',
     subtitle: 'Top Engineering Institutions & Entrance Pathways',
     badge: 'High Demand',
     icon: LuGraduationCap,
     highlights: [
       {
-        title: 'National & State Exams',
-        desc: 'Admissions guided by JEE Main, JEE Advanced, MHT-CET, WBJEE, COMEDK, and KCET.'
+        title: 'National & State-Level Entrance Exams',
+        desc: 'Get admission guidance for exams such as JEE Main, JEE Advanced, MHT-CET, WBJEE, COMEDK, and KCET.'
       },
       {
-        title: 'Top Private Universities',
-        desc: 'Direct pathways via exams like BITSAT, VITEEE, SRMJEEE, MET, and KIITEE.'
+        title: 'Leading Private Universities',
+        desc: 'Explore admission options at private universities through entrance exams like BITSAT, VITEEE, SRMJEEE, MET, and KIITEE.'
       },
       {
-        title: 'Trending Specializations',
-        desc: 'Computer Science (CSE), AI & ML, Data Science, Cyber Security, Robotics, & VLSI.'
+        title: 'Popular Engineering Specializations',
+        desc: 'Choose from in-demand fields such as Computer Science, AI & Machine Learning, Data Science, Cyber Security, Robotics, and VLSI.'
       },
       {
-        title: 'Eligibility Criteria',
-        desc: 'Minimum 45% - 60% aggregate in PCM (Physics, Chemistry, Maths) in Class 12th + Entrance Qualification.'
+        title: 'Eligibility Requirements',
+        desc: 'Students generally need 45%–60% aggregate marks in Class 12 PCM (Physics, Chemistry, and Mathematics), along with the required entrance exam qualification, depending on the institution.'
       },
       {
-        title: 'Management & NRI Quota',
-        desc: 'Direct admission assistance under Institutional Level & Management Quota seats in top institutes.'
+        title: 'Management & NRI Quota Admissions',
+        desc: 'Get guidance on admission opportunities through institutional-level, management, and NRI quota seats at eligible colleges, subject to their admission policies.'
       }
     ],
     popularColleges: ['IITs / NITs / IIITs', 'BITS Pilani', 'VIT Vellore', 'Manipal Institute (MIT)', 'SRM Institute']
   },
   {
     id: 'management',
-    title: 'Management (MBA / PGDM / BBA)',
+    title: 'Management Admissions',
     subtitle: 'Premier B-Schools & Specialized Management Programs',
     badge: 'High ROI',
     icon: LuBriefcase,
     highlights: [
       {
-        title: 'Premier Entrance Exams',
-        desc: 'Shortlisting based on CAT, XAT, CMAT, MAT, NMAT, SNAP, and ATMA overall percentile scores.'
+        title: 'Top Management Entrance Exams',
+        desc: 'Get admission guidance for exams such as CAT, XAT, CMAT, MAT, NMAT, SNAP, and ATMA based on your overall percentile and college preferences.'
       },
       {
-        title: 'Undergraduate Programs',
-        desc: 'BBA & Integrated 5-Year IPM programs via IPMAT, JIPMAT, CUET-UG, and NPAT.'
+        title: 'Undergraduate Management Programs',
+        desc: 'Explore BBA and five-year Integrated Programme in Management (IPM) options through IPMAT, JIPMAT, CUET-UG, and NPAT.'
       },
       {
-        title: 'Core & Specialized Electives',
-        desc: 'Marketing, Finance, Business Analytics, Human Resources, Operations, & Supply Chain.'
+        title: 'Popular Management Specializations',
+        desc: 'Choose from key fields such as Marketing, Finance, Business Analytics, Human Resources, Operations, and Supply Chain Management.'
       },
       {
-        title: 'Selection Rounds',
-        desc: 'Comprehensive preparation support for GD (Group Discussion), WAT (Writing Test), & Personal Interview (PI).'
+        title: 'Admission & Selection Preparation',
+        desc: 'Prepare for every stage of the admission process with guidance for Group Discussions (GD), Written Ability Tests (WAT), and Personal Interviews (PI).'
       },
       {
-        title: 'Corporate Placement Focus',
-        desc: 'Selection guidance targeting institutes with strong corporate exposure and placement records.'
+        title: 'Career & Placement Guidance',
+        desc: 'Get help identifying institutes with industry connections, corporate exposure, and placement opportunities that align with your career goals.'
       }
     ],
     popularColleges: ['IIMs (CAT Required)', 'XLRI Jamshedpur', 'NMIMS Mumbai', 'SIBM Pune', 'Great Lakes']
@@ -115,10 +115,10 @@ export default function AdmissionsIndiaSection(): React.JSX.Element {
             <LuShieldCheck className="w-4 h-4" /> Admission Guidance 2026–27
           </span>
           <h2 className="text-3xl sm:text-4xl font-semibold text-zinc-900 tracking-tight">
-            Engineering & Management <span className="text-orange-600">Admissions in India</span>
+            Engineering & Management <span className="text-orange-600">Admissions Made Easier</span>
           </h2>
           <p className="mt-3 text-base text-zinc-600">
-            Expert counseling for premier B.Tech, MBA, BBA, and PGDM institutions across India. Secure your dream college with complete entrance and admission support.
+           Get expert guidance for B.Tech, MBA, BBA, and PGDM admissions at reputed colleges across India. Receive support with entrance exams, college selection, and the admission process to help you choose the right path for your future.
           </p>
         </div>
 

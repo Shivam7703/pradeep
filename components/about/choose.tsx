@@ -23,39 +23,44 @@ interface FeatureItem {
 const features: FeatureItem[] = [
   {
     id: 'feature-1',
-    title: '100% Transparent Counseling',
-    description: 'Zero hidden fees, clear eligibility criteria, and honest advice tailored to your budget and academic profile.',
+    title: 'Honest & Transparent Counseling',
+    description:
+      'Offering clear information about fees, eligibility, admission requirements, and available options so students and parents can make informed decisions.',
     icon: LuShieldCheck,
     badgeText: 'Trust & Ethics',
   },
   {
     id: 'feature-2',
-    title: 'NMC & WHO Recognized Colleges',
-    description: 'Direct tie-ups with top government and accredited private universities across India and abroad.',
+    title: 'Guidance on Recognised Universities',
+    description:
+      'Helping students check university recognition and relevant approval requirements when selecting institutions in India or abroad.',
     icon: LuGraduationCap,
     badgeText: 'Accredited',
   },
   {
     id: 'feature-3',
-    title: 'End-to-End Admission Support',
-    description: 'From documentation, university application, and visa approval to pre-departure and hostel assistance.',
+    title: 'Complete Admission Assistance',
+    description:
+      'Supporting students with applications, document preparation, university procedures, visa applications, and pre-departure arrangements.',
     icon: LuAward,
     badgeText: 'Full Assistance',
   },
   {
     id: 'feature-4',
-    title: 'Dedicated 1-on-1 Guidance',
-    description: 'Personalized career guidance from experienced counselors available round-the-clock for students and parents.',
+    title: 'Personalised One-on-One Counseling',
+    description:
+      'Providing individual attention to students and parents, with guidance tailored to academic qualifications, interests, budget, and future plans.',
     icon: LuHeadphones,
     badgeText: '24/7 Support',
   },
 ];
 
 const highlights = [
-  '10,000+ Students Successfully Placed',
-  '99.8% Visa Approval Success Rate',
-  '15+ Countries & 200+ Partner Universities',
-  'Post-Landing Support Throughout the Course',
+  'Personalised guidance for course and university selection.',
+  'Transparent information about fees and eligibility.',
+  'Support with applications, documentation, and visa procedures.',
+  'Guidance throughout the admission and pre-departure process.',
+  '12+ Years of Educational Guidance: Bringing experience and a student-focused approach to help learners choose suitable courses, colleges, and career pathways.',
 ];
 
 // Animation Variants
@@ -108,7 +113,7 @@ export default function WhyChooseUs(): React.JSX.Element {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-3xl sm:text-4xl md:text-5xl font-semibold text-zinc-900 tracking-tight leading-tight"
             >
-              Your Trusted Partner for <span className="text-orange-600">Higher Education</span>
+              Trusted For Your Higher <span className="text-orange-600">Higher Education</span>
             </motion.h2>
 
             <motion.p
@@ -118,7 +123,7 @@ export default function WhyChooseUs(): React.JSX.Element {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-zinc-600 text-sm sm:text-base leading-relaxed"
             >
-              We simplify admissions for MBBS, Engineering, and Management programs. Our proven track record ensures you make informed decisions for a bright career ahead.
+We help students make informed decisions about MBBS, Engineering, and Management admissions through personalised counseling, clear information, and step-by-step support at every stage.
             </motion.p>
 
             {/* Checklist Highlights */}

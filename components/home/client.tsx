@@ -99,10 +99,10 @@ export default function TrendingCategoriesSlider(): React.JSX.Element {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
           <div className="max-w-2xl">
             <h2 className="text-3xl sm:text-4xl font-semibold text-zinc-900 tracking-tight">
-              Top <span className='text-orange-600'>Trending</span> Categories
+              Top <span className='text-orange-600'>Trending Courses</span>  & Categories
             </h2>
             <p className="mt-3 text-zinc-500 text-sm sm:text-base leading-relaxed">
-              Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero tempus, blandit posuere and ligula varius magna a porta
+Find popular courses and career options that match your interests, develop your skills, and prepare you for future opportunities through the right educational choices.
             </p>
           </div>
 

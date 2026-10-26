@@ -9,7 +9,8 @@ import React from 'react'
 function page() {
     return (
         <div>
-            <Banner title="About Us" para="lorem ipsum dolor sit amet consectetur adipiscing elit id laborum et qui reprehenderit et vel." slug="about-us" />
+            <Banner title="About Us" para="We provide expert educational guidance, flexible learning opportunities, and personalized support to help students achieve their academic and career goals. 
+" slug="about-us" />
             <AboutUs />
             <Mission/>
             <StatsCounter/>

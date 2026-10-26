@@ -19,17 +19,17 @@ const navLinks: NavItem[] = [
     href: '/services',
     subnav: [
       { name: 'MBBS In Abroad', href: '/services/mbbs-abroad' },
-      { name: 'MBBS In India', href: '/services/mbbs-india' },
-      { name: 'Btech Admission', href: '/services/btech-admission' },
+      { name: 'MBBS In India', href: '/services/mbbs-in-india' },
+      { name: 'Btech Admission', href: '/services/b-tech-admission' },
       {
         name: 'Management Course Admissions',
         href: '/services/management-admissions',
         subnav: [
           { name: 'BBA', href: '/courses/bba' },
-          { name: 'Bcom', href: '/courses/bcom' },
-          { name: 'Online MBA in Business Analytics', href: '/courses/online-mba-analytics' },
-          { name: 'Online MBA in Marketing', href: '/courses/online-mba-marketing' },
-          { name: 'Online MBA in Finance', href: '/courses/online-mba-finance' },
+          { name: 'Bcom', href: '/courses/b-com' },
+          { name: 'Online MBA in Business Analytics', href: '/courses/online-mba-in-business-analytics' },
+          { name: 'Online MBA in Marketing', href: '/courses/online-mba-in-marketing' },
+          { name: 'Online MBA in Finance', href: '/courses/online-mba-in-finance' },
         ],
       },
       { name: 'Career Counselling', href: '/services/career-counselling' },

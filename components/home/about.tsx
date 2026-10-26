@@ -3,7 +3,7 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 import { motion, Variants } from 'framer-motion';
-import { about, about2 } from '@/assets';
+import { about } from '@/assets';
 
 interface Metric {
   label: string;
@@ -88,14 +88,15 @@ export default function AboutUs(): React.JSX.Element {
                 ABOUT US
             </h4>
             <h2 className="text-3xl md:text-4xl capitalize  font-semibold text-zinc-900 leading-tight">
-              Transform your Career growth through{' '}
+              Grow Your Career with
+{' '}
               <span className="text-orange-600">online education</span>
             </h2>
             <p className="text-zinc-800 leading-relaxed text-sm sm:text-base">
-              Empowering students with industry-relevant skills and personalized mentorship. We provide flexible online learning programs tailored to advance your career and achieve academic excellence.
+We help students develop useful skills and gain knowledge through flexible online learning programs designed to support their career growth and academic success.
             </p>
                  <p className="text-zinc-800 leading-relaxed text-sm sm:text-base">
-              Empowering students with industry-relevant skills and personalized mentorship. We provide flexible online learning programs tailored to advance your career and achieve academic excellence.
+With expert guidance and industry-focused learning, students can improve their abilities, build confidence, and take the next step towards achieving their career goals.
             </p>
           </motion.div>
 

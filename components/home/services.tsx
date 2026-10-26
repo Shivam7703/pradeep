@@ -10,6 +10,7 @@ import { banner1, banner2 } from '@/assets';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { HiOutlineAcademicCap, HiOutlineVideoCamera, HiOutlineUserGroup, HiOutlineBadgeCheck, HiOutlineClock, HiOutlineBriefcase } from 'react-icons/hi';
 
 const headerVariants: Variants = {
   hidden: { opacity: 0, y: -20 },
@@ -21,93 +22,68 @@ const headerVariants: Variants = {
 };
 
 export default function OurServices() {
-  const services = [
-    {
-      id: 1,
-      title: 'Online Degree Programs',
-      category: 'Academic Excellence',
-      description: 'Earn accredited bachelor & master degrees from top-ranked universities with flexible online schedules.',
-      image: banner1,
-      tag: 'Most Popular',
-      stats: '98% Pass Rate',
-      icon: (
-        <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-        </svg>
-      ),
-    },
-    {
-      id: 2,
-      title: 'Interactive Live Classes',
-      category: 'Real-time Learning',
-      description: 'Engage in live interactive video lectures with industry expert educators and real-time Q&A sessions.',
-      image: banner2,
-      tag: 'Live Sessions',
-      stats: '24/7 Access',
-      icon: (
-        <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-        </svg>
-      ),
-    },
-    {
-      id: 3,
-      title: '1-on-1 Expert Mentorship',
-      category: 'Career Growth',
-      description: 'Get personalized career coaching and 1-on-1 guidance from top industry leaders to accelerate your career.',
-      image: banner1,
-      tag: 'Personalized',
-      stats: '100+ Mentors',
-      icon: (
-        <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>
-      ),
-    },
-    {
-      id: 4,
-      title: 'Skill Certification Bootcamps',
-      category: 'Industry Standards',
-      description: 'Master in-demand skills in Tech, Business, and Design with hands-on projects and recognized certificates.',
-      image: banner2,
-      tag: 'Certified',
-      stats: '100% Practical',
-      icon: (
-        <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-        </svg>
-      ),
-    },
-    {
-      id: 5,
-      title: 'Self-Paced Learning Hub',
-      category: 'Flexibility',
-      description: 'Study anytime, anywhere with lifetime access to high-quality recorded lectures, quizzes, and resources.',
-      image: banner1,
-      tag: 'Self Paced',
-      stats: '500+ Hours',
-      icon: (
-        <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
-    },
-    {
-      id: 6,
-      title: 'Global Career Placement',
-      category: 'Employment Support',
-      description: 'Get job-ready with resume building, mock interviews, and direct referral connections to global companies.',
-      image: banner2,
-      tag: 'High Placement',
-      stats: '85% Hired',
-      icon: (
-        <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-      ),
-    },
-  ];
+const services = [
+  {
+    id: 1,
+    title: 'Flexible Online Degrees',
+    category: 'Quality Education | Flexible Learning',
+    description: 'Pursue bachelor’s and master’s degree programs with flexible study schedules and learning opportunities from reputed universities.',
+    image: banner1,
+    tag: 'Degree Program',
+    stats: '98% Pass Rate',
+    icon: <HiOutlineAcademicCap className="w-5 h-5 text-blue-600" />,
+  },
+  {
+    id: 2,
+    title: 'Live Online Classes',
+    category: 'Live Learning | Expert Guidance',
+    description: 'Attend interactive online classes led by experienced educators, ask questions in real time, and learn through engaging discussions.',
+    image: banner2,
+    tag: 'Live Sessions',
+    stats: '24/7 Learning Access',
+    icon: <HiOutlineVideoCamera className="w-5 h-5 text-blue-600" />,
+  },
+  {
+    id: 3,
+    title: 'Personalised Mentorship',
+    category: 'Personal Guidance | Career Development',
+    description: 'Receive individual guidance, career advice, and support from experienced professionals to build your skills and plan your career path.',
+    image: banner1,
+    tag: '1-on-1 Guidance',
+    stats: '100+ Mentors',
+    icon: <HiOutlineUserGroup className="w-5 h-5 text-blue-600" />,
+  },
+  {
+    id: 4,
+    title: 'Professional Skill Development',
+    category: 'Practical Training | Skill Development',
+    description: 'Learn in-demand skills in technology, business, and design through practical projects, structured training, and certification programs.',
+    image: banner2,
+    tag: 'Certification',
+    stats: 'Hands-On Learning',
+    icon: <HiOutlineBadgeCheck className="w-5 h-5 text-blue-600" />,
+  },
+  {
+    id: 5,
+    title: 'Learn Anytime, Anywhere',
+    category: 'Flexible Study | Learn at Your Pace',
+    description: 'Access recorded lessons, practice quizzes, and useful study materials at your convenience while learning at a pace that suits you.',
+    image: banner1,
+    tag: 'Self Paced',
+    stats: '500+ Hours of Learning',
+    icon: <HiOutlineClock className="w-5 h-5 text-blue-600" />,
+  },
+  {
+    id: 6,
+    title: 'Global Career Opportunities',
+    category: 'Career Assistance | Job Readiness',
+    description: 'Prepare for job opportunities with resume support, mock interviews, and guidance to connect with potential employers worldwide.',
+    image: banner2,
+    tag: 'Career Support',
+    stats: '85% Hired',
+    icon: <HiOutlineBriefcase className="w-5 h-5 text-blue-600" />,
+  },
+];
 
  
 
@@ -127,14 +103,15 @@ export default function OurServices() {
           <div className="max-w-2xl space-y-3">
             
             <h2 className="text-3xl  md:text-4xl capitalize   font-semibold text-zinc-700 leading-tight">
-              Empowering Your Future With{' '}
+              Building Your Future Through 
+{' '}
               <span className="text-orange-600">
-                World-Class Services
+                Quality Education
               </span>
             </h2>
 
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-              Explore our comprehensive range of educational solutions designed to help learners and professionals excel in their career path.
+We offer a range of learning solutions designed to help students and professionals develop their skills, gain knowledge, and achieve their career goals.
             </p>
           </div>
 

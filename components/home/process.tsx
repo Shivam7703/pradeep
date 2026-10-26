@@ -7,10 +7,9 @@ import {
   LuGraduationCap,
   LuFileCheck,
   LuPlaneTakeoff,
-  LuArrowRight,
-  LuSparkles
 } from 'react-icons/lu';
 import { MdWork } from 'react-icons/md';
+import Link from 'next/link';
 
 interface ProcessStep {
   number: string;
@@ -23,29 +22,29 @@ interface ProcessStep {
 const steps: ProcessStep[] = [
   {
     number: '01',
-    title: 'Free Profile Counseling',
-    description: 'We assess your academic background, career goals, and budget to shortlist suitable options.',
+    title: 'Personalised Career Counseling',
+    description: 'We review your academic qualifications, career interests, and budget to help you identify suitable courses and colleges.',
     icon: LuSearch,
     badge: 'Step 1',
   },
   {
     number: '02',
-    title: 'University Selection',
-    description: 'Choose from top NMC/WHO recognized medical or engineering universities across top countries.',
+    title: 'Course & University Selection',
+    description: 'Get guidance in selecting suitable medical or engineering universities based on your preferences, eligibility, and recognition requirements.',
     icon: LuGraduationCap,
     badge: 'Step 2',
   },
   {
     number: '03',
-    title: 'Documentation & Admission',
-    description: 'Hassle-free application submission, document verification, and guaranteed admission letter.',
+    title: 'Application & Documentation Support',
+    description: 'Receive assistance with application submission, document preparation, verification, and admission formalities.',
     icon: LuFileCheck,
     badge: 'Step 3',
   },
   {
     number: '04',
-    title: 'Visa & Departure',
-    description: 'Complete assistance for student visa processing, flight bookings, and pre-departure guidance.',
+    title: 'Visa & Pre-Departure Assistance',
+    description: 'Get support with student visa applications, travel arrangements, and pre-departure preparation for a smooth transition to college life.',
     icon: LuPlaneTakeoff,
     badge: 'Step 4',
   },
@@ -99,7 +98,8 @@ export default function WorkProcess(): React.JSX.Element {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl sm:text-4xl  font-semibold text-zinc-900 tracking-tight"
           >
-            Our <span className="text-orange-600">Simple 4-Step </span>Admission Process
+            Your 
+ <span className="text-orange-600"> Admission Journey  </span>in 4 Simple Steps
           </motion.h2>
 
           <motion.p
@@ -109,7 +109,7 @@ export default function WorkProcess(): React.JSX.Element {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-4 text-zinc-600 text-sm sm:text-base leading-relaxed"
           >
-            From counseling to flying to your dream college — we guide you through every stage smoothly without any hassle.
+From choosing the right course to securing admission at your preferred college, we provide step-by-step guidance to make the entire process simple and stress-free.
           </motion.p>
         </div>
 
@@ -174,9 +174,9 @@ export default function WorkProcess(): React.JSX.Element {
             </p>
           </div>
 
-          <button className="bg-white hover:bg-zinc-100 text-blue-600 font-bold px-6 py-3 rounded-xl text-sm shadow transition-all shrink-0">
+          <Link href="/contact-us" className="bg-white hover:bg-zinc-100 text-blue-600 font-bold px-6 py-3 rounded-xl text-sm shadow transition-all shrink-0">
             Book Free Counseling
-          </button>
+          </Link>
         </motion.div>
 
       </div>

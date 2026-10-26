@@ -29,83 +29,92 @@ interface ContentData {
   }[]
 }
 
+
 const sectionData: Record<TabType, ContentData> = {
   vision: {
-    title: 'Empowering Student Futures Globally',
-    subtitle: 'Our Vision',
+    title: 'Helping Students Build a Successful Future',
+    subtitle: 'Our Commitment to Educational Excellence',
     badge: 'VISION 2030',
     description:
-      'To become the most trusted global education consultancy, bridging the gap between ambitious students and world-class educational institutions.',
+      'Our vision is to guide students towards the right educational opportunities by connecting them with suitable institutions and helping them make informed decisions about their future.',
     icon: LuEye,
     points: [
       {
-        title: 'Global Recognition',
-        description: 'Establishing transparent pathways for medical, engineering, and management aspirants across 15+ countries.',
+        title: 'Global Education Opportunities',
+        description:
+          'Providing guidance for students pursuing medical, engineering, and management education in India and abroad, based on their goals and eligibility.',
         icon: LuGlobe,
       },
       {
-        title: 'Student-Centric Excellence',
-        description: 'Creating a ecosystem where every student receives unbiased, quality guidance tailored to their career aspirations.',
+        title: 'Student-Focused Guidance',
+        description:
+          'Offering personalised support to help every student choose suitable courses and institutions according to their interests, academic background, and career plans.',
         icon: LuAward,
       },
       {
-        title: 'Ethical Leadership',
-        description: 'Setting industry benchmarks in transparency, admission ethics, and student welfare support.',
+        title: 'Honest & Transparent Guidance',
+        description:
+          'Maintaining transparency throughout the admission process while prioritising students’ needs, providing reliable information, and supporting them at every step.',
         icon: LuCheck,
       },
     ],
   },
   mission: {
-    title: 'Guiding Every Step Toward Academic Success',
-    subtitle: 'Our Mission',
+    title: 'Supporting Students at Every Stage of Their Education',
+    subtitle: 'Our Commitment to Quality Education',
     badge: 'OUR PURPOSE',
     description:
-      'To deliver end-to-end transparent admission guidance, empowering students with accurate insights, university options, and personalized counseling.',
+      'Our mission is to make the admission journey easier through clear information, suitable university options, and personalised guidance that helps students make confident decisions.',
     icon: LuTarget,
     points: [
       {
-        title: 'Transparent Counseling',
-        description: 'Providing clear, honest advice on university selection, fees, eligibility, and post-degree career prospects.',
+        title: 'Clear & Honest Counseling',
+        description:
+          'Helping students understand university options, tuition fees, admission requirements, and future career opportunities so they can make informed choices.',
         icon: LuUsers,
       },
       {
-        title: 'Hassle-Free Admissions',
-        description: 'Simplifying complex application, documentation, visa, and accommodation processes for students and parents.',
+        title: 'Simple & Smooth Admission Process',
+        description:
+          'Providing step-by-step assistance with applications, document preparation, visa procedures, and accommodation planning for students and their families.',
         icon: LuBookOpen,
       },
       {
-        title: 'Lifelong Student Support',
-        description: 'Offering continuous pre-departure and post-landing guidance throughout the student’s academic journey.',
+        title: 'Ongoing Student Support',
+        description:
+          'Guiding students before departure and after arrival, ensuring they receive the necessary support as they adjust to their new academic environment.',
         icon: LuCheck,
       },
     ],
   },
   goals: {
-    title: 'Measurable Impact & Future Milestones',
-    subtitle: 'Our Goals',
+    title: 'Our Goals for Growth & Student Success',
+    subtitle: 'Our Commitment to Educational Excellence',
     badge: 'TARGET OBJECTIVES',
     description:
-      'Our targeted milestones focus on maximizing student satisfaction, expanding university tie-ups, and ensuring 100% visa success.',
+      'We aim to support more students in reaching their academic goals, build strong relationships with reputed universities, and provide reliable guidance throughout the admission process.',
     icon: LuCompass,
     points: [
       {
-        title: '10,000+ Successful Placements',
-        description: 'Aiming to guide over 10,000 students into top-tier universities by the end of 2028.',
+        title: 'Supporting 10,000+ Students',
+        description:
+          'Working towards guiding more than 10,000 students to suitable universities and educational opportunities by the end of 2028.',
         icon: LuAward,
       },
       {
-        title: '100% Visa & Admission Success Rate',
-        description: 'Maintaining flawless documentation checks to guarantee maximum success in visa processing.',
+        title: 'Reliable Admission & Visa Guidance',
+        description:
+          'Helping students prepare accurate documents, understand eligibility requirements, and complete admission and visa procedures with proper guidance. Outcomes depend on university and visa authority decisions.',
         icon: LuCheck,
       },
       {
-        title: 'Expanding University Networks',
-        description: 'Partnering directly with 200+ NMC, WHO, and UGC-accredited colleges worldwide.',
+        title: 'Building a Strong University Network',
+        description:
+          'Expanding connections with recognised universities and colleges worldwide to provide students with more suitable options for medical, engineering, and management education.',
         icon: LuGlobe,
       },
     ],
-  },
-}
+  }}
 
 export default function Mission(): React.JSX.Element {
   const [activeTab, setActiveTab] = useState<TabType>('vision')
@@ -128,7 +137,7 @@ export default function Mission(): React.JSX.Element {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl md:text-4xl font-semibold text-zinc-900 tracking-tight"
           >
-            Vision, Mission & <span className="text-orange-600">Strategic Goals</span>
+            Vision, Mission & <span className="text-orange-600">S Goals</span>
           </motion.h2>
 
           <motion.p
@@ -138,7 +147,7 @@ export default function Mission(): React.JSX.Element {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-4 text-zinc-600 text-sm sm:text-base leading-relaxed"
           >
-            Built on integrity, transparency, and a commitment to helping students achieve their educational dreams.
+Guided by honesty, trust, and student-focused support, we aim to help every learner make informed educational choices and achieve their future goals.
           </motion.p>
         </div>
 

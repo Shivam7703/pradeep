@@ -128,10 +128,10 @@ export default function MbbsCountrySlider() {
         {/* Header Section */}
         <div className="text-center mb-10">
           <h2 className="text-3xl sm:text-4xl font-semibold text-zinc-900 tracking-tight">
-            Explore Top <span className="text-orange-600">MBBS Abroad</span> Countries
+            Choose the Right <span className="text-orange-600">Country for MBBS</span> Abroad
           </h2>
           <p className="mt-3 text-base text-zinc-600 max-w-2xl mx-auto">
-            Guidance curated by Career Coach Pradeep for Indian medical aspirants seeking quality education within budget.
+            Get expert guidance from Career Coach Pradeep to help Indian medical aspirants find quality medical education that fits their budget and career goals.
           </p>
         </div>
 

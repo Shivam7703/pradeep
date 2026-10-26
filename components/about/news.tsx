@@ -20,51 +20,44 @@ const newsArticles: NewsItem[] = [
     id: 'news-1',
     mediaName: 'The Times of India',
     logoText: 'TIMES OF INDIA',
-    headline: 'Pradeep Consultancy Recognized Among Top Education Advisory Firms in India',
+    headline:
+      'Pradeep Consultancy: Supporting Students in Higher Education Decisions',
     date: 'August 2026',
     articleUrl: 'https://timesofindia.indiatimes.com',
-    tag: 'Education Excellence',
+    tag: 'Education & Career Guidance',
     accentColor: 'from-red-600 to-rose-700',
   },
   {
     id: 'news-2',
     mediaName: 'The Economic Times',
     logoText: 'ECONOMIC TIMES',
-    headline: 'Simplifying Higher Education Admissions: How Ethical Guidance is Changing the Industry',
+    headline: 'Making the College Admission Process Easier for Students',
     date: 'June 2026',
     articleUrl: 'https://economictimes.indiatimes.com',
-    tag: 'Industry Leader',
+    tag: 'Education Insights',
     accentColor: 'from-blue-600 to-indigo-700',
   },
   {
     id: 'news-3',
     mediaName: 'Aaj Tak',
     logoText: 'AAJ TAK',
-    headline: 'Medical & Engineering Admissions: Key Advisory Insights for Aspirants',
+    headline:
+      'Important Admission Guidance for Medical and Engineering Aspirants',
     date: 'May 2026',
     articleUrl: 'https://aajtak.in',
-    tag: 'Media Spotlight',
+    tag: 'Admission Updates',
     accentColor: 'from-amber-500 to-orange-600',
   },
   {
     id: 'news-4',
     mediaName: 'NDTV Education',
     logoText: 'NDTV EDUCATION',
-    headline: 'A Complete Guide for Students Planning Higher Education in Accredited Institutions',
+    headline: "A Student's Guide to Choosing the Right College",
     date: 'March 2026',
     articleUrl: 'https://ndtv.com/education',
-    tag: 'Career Trends',
+    tag: 'Career & Education Trends',
     accentColor: 'from-zinc-700 to-zinc-900',
   },
-];
-
-// Brand logos bar (Ticker/Grid)
-const mediaLogos = [
-  { name: 'Times of India', text: 'THE TIMES OF INDIA' },
-  { name: 'Economic Times', text: 'The Economic Times' },
-  { name: 'Aaj Tak', text: 'आज तक' },
-  { name: 'NDTV', text: 'NDTV' },
-  { name: 'Dainik Bhaskar', text: 'दैनिक भास्कर' },
 ];
 
 const containerVariants: Variants = {

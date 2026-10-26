@@ -24,23 +24,6 @@ export default function ContactSection(): React.JSX.Element {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate API Call / Form Submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormData({ name: '', email: '', phone: '', course: '', message: '' });
-    }, 1200);
-  };
 
   return (
     <section className="w-full bg-zinc-50 px-4 py-7 md:p-14 lg:px-20 overflow-hidden">
@@ -64,7 +47,7 @@ export default function ContactSection(): React.JSX.Element {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl sm:text-4xl md:text-5xl font-semibold text-zinc-900 tracking-tight"
           >
-            Connect With <span className="text-orange-600">Our Experts</span>
+            Get in Touch With Our <span className="text-orange-600">Counseling Team</span>
           </motion.h2>
 
           <motion.p
@@ -74,7 +57,7 @@ export default function ContactSection(): React.JSX.Element {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-4 text-zinc-600 text-sm sm:text-base leading-relaxed"
           >
-            Have questions about MBBS, Engineering, or Management admissions? Fill out the form or reach out to us directly.
+           Need help with MBBS, Engineering, or Management admissions? Contact our team for personalised guidance, course selection, and support throughout your admission journey.
           </motion.p>
         </div>
 
@@ -89,7 +72,6 @@ export default function ContactSection(): React.JSX.Element {
           >
             {/* Background Decorative Element */}
             <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-blue-600/20 rounded-full blur-3xl pointer-events-none" />
-
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold tracking-tight mb-2">
                 Contact Information
@@ -204,7 +186,7 @@ export default function ContactSection(): React.JSX.Element {
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form  className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {/* Full Name */}
                   <div>
@@ -216,7 +198,7 @@ export default function ContactSection(): React.JSX.Element {
                       name="name"
                       required
                       value={formData.name}
-                      onChange={handleChange}
+                      
                       placeholder="e.g. Rahul Sharma"
                       className="w-full px-4 py-3 rounded-xl border border-zinc-200 placeholder:text-zinc-500 text-sm outline-none transition-all"
                     />
@@ -232,7 +214,7 @@ export default function ContactSection(): React.JSX.Element {
                       name="phone"
                       required
                       value={formData.phone}
-                      onChange={handleChange}
+                      
                       placeholder="+91 9876543210"
                       className="w-full px-4 py-3 rounded-xl border border-zinc-200 placeholder:text-zinc-500 text-sm outline-none transition-all"
                     />
@@ -250,7 +232,7 @@ export default function ContactSection(): React.JSX.Element {
                       name="email"
                       required
                       value={formData.email}
-                      onChange={handleChange}
+                      
                       placeholder="rahul@example.com"
                       className="w-full px-4 py-3 rounded-xl border border-zinc-200 placeholder:text-zinc-500 text-sm outline-none transition-all"
                     />
@@ -264,7 +246,7 @@ export default function ContactSection(): React.JSX.Element {
                     <select
                       name="course"
                       value={formData.course}
-                      onChange={handleChange}
+                      
                       className="w-full px-4 py-3 rounded-xl border border-zinc-200  placeholder:text-zinc-500 text-sm outline-none transition-all text-zinc-700"
                     >
                       <option value="">Select Course...</option>
@@ -286,7 +268,7 @@ export default function ContactSection(): React.JSX.Element {
                     rows={4}
                     required
                     value={formData.message}
-                    onChange={handleChange}
+                    
                     placeholder="Tell us about your qualification, score or queries..."
                     className="w-full px-4 py-3 rounded-xl border border-zinc-200 placeholder:text-zinc-500 text-sm outline-none transition-all resize-none"
                   />

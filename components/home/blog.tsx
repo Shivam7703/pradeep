@@ -92,14 +92,13 @@ export default function BlogSection(): React.JSX.Element {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
           <div className="max-w-2xl">
             <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-blue-50 text-blue-600 border border-blue-100 mb-3">
-              <RiArticleFill className="w-3.5 h-3.5" /> Latest Articles & Guides
+              <RiArticleFill className="w-3.5 h-3.5" /> Latest Updates
             </span>
             <h2 className="text-3xl sm:text-4xl font-semibold text-zinc-900 tracking-tight">
-              News & <span className="text-orange-600">Admission Insights</span>
+              Latest Education & <span className="text-orange-600">Admission Updates</span>
             </h2>
             <p className="mt-3 text-zinc-600 text-sm sm:text-base leading-relaxed">
-              Stay updated with expert advice, admission updates, university reviews, and career counseling tips.
-            </p>
+Get the latest admission news, expert guidance, university information, and career tips to help you make informed decisions about your education and future.            </p>
           </div>
 
           <a

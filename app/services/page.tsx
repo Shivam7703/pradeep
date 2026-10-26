@@ -6,7 +6,8 @@ import React from 'react'
 function page() {
   return (
     <div className='text-zinc-800'>
-                  <Banner title="Our Services" para="lorem ipsum dolor sit amet consectetur adipiscing elit id laborum et qui reprehenderit et vel." slug="our services" />
+                  <Banner title="Our Services" para="Get expert guidance for course selection, university admissions, documentation, and career planning to build a successful future. 
+" slug="our services" />
                         <OurServices />
                   <WorkProcess />
     </div>
