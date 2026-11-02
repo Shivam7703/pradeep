@@ -1,11 +1,55 @@
 "use client"
-import { banner1, banner2 } from '@/assets';
+import { ind,georg,kyr,kazak,russ,uzb,maur } from '@/assets';
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { LuArrowRight, LuCheck, LuChevronLeft, LuChevronRight, LuClock, LuGraduationCap, LuIndianRupee, } from 'react-icons/lu';
 
 
 const mbbsCountries = [
+  {
+    id: 'india',
+    name: 'India',
+    tagline: 'Premier choice with top-tier clinical exposure & zero cultural gap',
+    budget: '₹5 Lakhs - ₹1.2 Crore',
+    duration: '5.5 Years (Inc. Internship)',
+    medium: '100% English',
+    badge: 'Home Country',
+    color: 'from-orange-500 to-amber-600',
+    image: ind, // Replace with your image asset reference
+    highlights: [
+      'Extensive Clinical & Real-world Patient Exposure',
+      'No FMGE Required for Practice in India',
+      'Familiar Indian Curriculum & Cultural Environment',
+      'Top-tier Government & Deemed Medical Colleges'
+    ],
+    popularUniversities: [
+      'AIIMS New Delhi',
+      'Kasturba Medical College (KMC) Manipal',
+      'King George\'s Medical University (KGMU) Lucknow'
+    ]
+  },
+  {
+    id: 'mauritius',
+    name: 'Mauritius',
+    tagline: 'High FMGE pass rates with Indian curriculum & clinical training',
+    budget: '₹40 - ₹60 Lakhs',
+    duration: '5 - 6 Years (Inc. Internship)',
+    medium: '100% English',
+    badge: 'NMC Compliant',
+    color: 'from-emerald-500 to-teal-700',
+    image: maur, // Replace with your image asset reference
+    highlights: [
+      'NMC & WHO Approved Indian-centric Syllabus',
+      'High FMGE/NExT Passing Rates & English Speaking Environment',
+      'Clinical Training in Regional State Government Hospitals',
+      'Visa-friendly Island Destination Close to India'
+    ],
+    popularUniversities: [
+      'Sir Seewoosagur Ramgoolam (SSR) Medical College',
+      'Anna Medical College & Research Centre',
+      'JSS Academy of Higher Education and Research'
+    ]
+  },
   {
     id: 'uzbekistan',
     name: 'Uzbekistan',
@@ -15,7 +59,7 @@ const mbbsCountries = [
     medium: '100% English',
     badge: 'Most Popular',
     color: 'from-blue-600 to-indigo-700',
-    image: banner1,
+    image: uzb,
     highlights: [
       'NMC & WHO Approved Curriculum',
       'High FMGE/NExT Passing Rates',
@@ -33,7 +77,7 @@ const mbbsCountries = [
     medium: 'English',
     badge: 'High Clinical Exposure',
     color: 'from-red-600 to-rose-700',
-    image: banner2,
+    image: russ,
     highlights: [
       'Globally Recognized Medical Degrees',
       'State-funded Government Hospitals',
@@ -51,7 +95,7 @@ const mbbsCountries = [
     medium: 'English',
     badge: 'Budget Friendly',
     color: 'from-cyan-600 to-blue-700',
-    image: banner1,
+    image: kazak,
     highlights: [
       'Top-Ranked National Medical Universities',
       'Simple Visa & Admission Process',
@@ -69,7 +113,7 @@ const mbbsCountries = [
     medium: '100% English',
     badge: 'European Standard',
     color: 'from-amber-600 to-orange-700',
-    image: banner2,
+    image: georg,
     highlights: [
       'European Credit Transfer System (ECTS)',
       'Highly Safe Country for Male & Female Students',
@@ -87,7 +131,7 @@ const mbbsCountries = [
     medium: 'English',
     badge: 'Lowest Budget',
     color: 'from-emerald-600 to-teal-700',
-    image: banner2,
+    image: kyr,
     highlights: [
       '5-Year Compact Course Duration',
       'Large Community of Indian Medical Students',

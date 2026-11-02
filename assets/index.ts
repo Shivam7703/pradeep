@@ -18,8 +18,15 @@ import finance from "@/assets/home/finance.jpg";
 import marketing from "@/assets/home/marketing.jpg";
 import mbbsabroad from "@/assets/home/mbbs-in-abroad.jpg";
 import mbbsindia from "@/assets/home/mbbs-in-india.webp";
+import ind from "@/assets/home/ind.jpg";
+import georg from "@/assets/home/georgia.jpg";
+import kyr from "@/assets/home/kyrgy.jpg";
+import kazak from "@/assets/home/kazakh.jpg";
+import russ from "@/assets/home/rus.jpg";
+import uzb from "@/assets/home/uzb.jpg";
+import maur from "@/assets/home/maur.jpg";
 
 
 
 
-export{logo,banner1,banner2,globalbanner,about,about2,about3,about1,analytics,bba,bcom,btech,career,finance,marketing,mbbsabroad,mbbsindia};
+export{logo,banner1,banner2,globalbanner,about,about2,about3,about1,analytics,bba,bcom,btech,career,finance,marketing,mbbsabroad,mbbsindia, ind,georg,kyr,kazak,russ,uzb,maur};
