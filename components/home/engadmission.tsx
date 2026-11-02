@@ -118,7 +118,7 @@ export default function AdmissionsIndiaSection(): React.JSX.Element {
             Engineering & Management <span className="text-orange-600">Admissions Made Easier</span>
           </h2>
           <p className="mt-3 text-base text-zinc-600">
-           Get expert guidance for B.Tech, MBA, BBA, and PGDM admissions at reputed colleges across India. Receive support with entrance exams, college selection, and the admission process to help you choose the right path for your future.
+            Get expert guidance for B.Tech, MBA, BBA, and PGDM admissions at reputed colleges across India. Receive support with entrance exams, college selection, and the admission process to help you choose the right path for your future.
           </p>
         </div>
 
@@ -262,7 +262,7 @@ export default function AdmissionsIndiaSection(): React.JSX.Element {
               </div>
               <div>
                 <label className="block text-xs font-medium text-zinc-700 mb-1">Phone / WhatsApp</label>
-                <input required type="tel" placeholder="+91 98765 43210" className="w-full px-3 py-2 border border-zinc-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+                <input required type="tel" placeholder="+91-8510930478" className="w-full px-3 py-2 border border-zinc-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none" />
               </div>
               <div>
                 <label className="block text-xs font-medium text-zinc-700 mb-1">Course Interested In</label>

@@ -29,11 +29,12 @@ const quickLinks: FooterLink[] = [
 ]
 
 const servicesLinks: FooterLink[] = [
-  { name: 'MBBS In Abroad', href: '/services/mbbs-abroad' },
-  { name: 'MBBS In India', href: '/services/mbbs-india' },
-  { name: 'Btech Admission', href: '/services/btech-admission' },
-  { name: 'Management Course Admissions', href: '/services/management-admissions' },
-  { name: 'Career Counselling', href: '/services/career-counselling' },
+   { name: 'MBBS In India', href: '/services/mbbs-in-india' },
+      { name: 'Btech Admission', href: '/services/b-tech-admission' },
+        { name: 'MBBS In Abroad', href: '/services/mbbs-abroad' },
+         { name: 'BBA', href: '/services/bba' },
+          { name: 'Bcom', href: '/services/b-com' },
+          { name: 'Online MBA in Business Analytics', href: '/services/online-mba-in-business-analytics' },
 ]
 
 const socialLinks = [
@@ -54,7 +55,7 @@ export default function Footer() {
           {/* Brand Info (2 Columns on Large Screens) */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="">
- <Image src={logo} alt="Logo" className="max-w-46 w-[70vw] mb-4 object-contain brightness-0 invert" />           </Link>
+              <Image src={logo} alt="Logo" className="max-w-46 w-[70vw] mb-4 object-contain brightness-0 invert" />           </Link>
 
             <p className="max-w-sm text-sm text-gray-50 leading-relaxed">
               Providing expert educational counseling and admission guidance for medical, engineering, and management courses in India and abroad.
@@ -118,7 +119,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3.5 text-sm">
               <li className="flex items-start gap-3 text-gray-50">
                 <FiMapPin className="mt-0.5 h-5 w-5 shrink-0 text-white" />
-                <span>India (Corporate Office & Admission Centers)</span>
+                <span>Vasant Kunj, New Delhi - 110070</span>
               </li>
 
               <li>
@@ -127,17 +128,17 @@ export default function Footer() {
                   className="flex items-center gap-3 text-gray-50 transition-colors hover:text-white"
                 >
                   <FiPhoneCall className="h-5 w-5 shrink-0 text-white" />
-                  <span className="font-medium">+91 98765 43210</span>
+                  <span className="font-medium">+91-8510930478</span>
                 </a>
               </li>
 
               <li>
                 <a
-                  href="mailto:info@pradeepconsultancy.com"
+                  href="mailto:info@careercoachpradeep.com"
                   className="flex items-center gap-3 text-gray-50 transition-colors hover:text-white"
                 >
                   <FiMail className="h-5 w-5 shrink-0 text-white" />
-                  <span className="font-medium">info@pradeepconsultancy.com</span>
+                  <span className="font-medium">info@careercoachpradeep.com</span>
                 </a>
               </li>
             </ul>
