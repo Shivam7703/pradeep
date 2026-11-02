@@ -460,157 +460,235 @@ export const Servicedata = [
     ]
   },
   {
-    "img": career,
-    "title": "Career Counselling",
-    "metatitle": "Personalised Career Counselling & Guidance | Pradeep Career Coach",
-    "metakey": "career counselling, career guidance, stream selection after 10th, course selection after 12th, college shortlisting, education planning",
-    "metadesc": "Get expert career counselling with Pradeep Career Coach. Discover suitable courses, streams, entrance exams, and colleges based on your academic strengths, budget, and long-term career goals.",
-    "content": [
-      {
-        "subcontent": [
-          {
-            "para": "Choosing a career can feel confusing when there are many courses, colleges, entrance examinations, and professional opportunities to consider. Students may be unsure about which subject to choose, which degree to pursue, or how their academic interests connect with future career options."
-          },
-          {
-            "para": "At Pradeep Career Coach, we help students and parents approach these decisions with greater clarity. Through personalised counselling, we discuss individual interests, academic strengths, career preferences, and practical considerations to help students plan their educational journey."
-          },
-          {
-            "para": "Every student has different interests, abilities, and goals. Career decisions should take these differences into account rather than relying only on peer choices, trends, or outside pressure."
+  "img": career,
+  "title": "Career Counselling",
+  "metatitle": "Personalised Career Counselling & Guidance | Pradeep Career Coach",
+  "metakey": "career counselling, career guidance, stream selection after 10th, course selection after 12th, college shortlisting, education planning",
+  "metadesc": "Get expert career counselling with Pradeep Career Coach. Discover suitable courses, streams, entrance exams, and colleges based on your academic strengths, budget, and long-term career goals.",
+  "content": [
+    {
+      "heading": "<h1>Make Career Decisions with the Right Guidance</h1>",
+      "subcontent": [
+        {
+          "para": "Choosing a career can feel confusing when there are many courses, colleges, entrance examinations, and professional opportunities to consider. Students may be unsure about which subject to choose, which degree to pursue, or how their academic interests connect with future career options."
+        },
+        {
+          "para": "At Pradeep Career Coach, we help students and parents approach these decisions with greater clarity. Through personalised counselling, we discuss individual interests, academic strengths, career preferences, and practical considerations to help students plan their educational journey."
+        }
+      ]
+    },
+    {
+      "heading": "<h2>Find a Direction That Matches Your Strengths</h2>",
+      "subcontent": [
+        {
+          "subheading": "",
+          "para": "Every student has different interests, abilities, and goals. Career decisions should take these differences into account rather than relying only on peer choices, trends, or outside pressure.",
+          "list": "",
+          "table": ""
+        },
+        {
+          "subheading": "",
+          "para": "Our career counselling helps you consider:",
+          "list": [
+            "Your interests, strengths, and academic performance.",
+            "Suitable courses after Class 10 and Class 12.",
+            "Career options in medicine, engineering, management, and other fields.",
+            "Entrance examinations and their eligibility requirements.",
+            "Course duration, education costs, and future study options.",
+            "Career pathways and the skills required for different fields."
+          ],
+          "table": ""
+        }
+      ]
+    },
+    {
+      "heading": "<h2>Our Career Counselling Services</h2>",
+      "subcontent": [
+        {
+          "subheading": "Personalised Career Assessment",
+          "para": "We discuss your interests, academic background, strengths, and expectations to identify areas worth considering for further study or career development.",
+          "list": "",
+          "table": ""
+        },
+        {
+          "subheading": "Course and Stream Selection",
+          "para": "Get guidance on choosing subjects, streams, and degree programmes based on your interests, eligibility, and future plans.",
+          "list": "",
+          "table": ""
+        },
+        {
+          "subheading": "College and University Selection",
+          "para": "We help you compare institutions using relevant factors such as course availability, fees, location, curriculum, and recognition status.",
+          "list": "",
+          "table": ""
+        },
+        {
+          "subheading": "Entrance Exam Planning",
+          "para": "Understand the examinations relevant to your chosen field, including their eligibility requirements, application timelines, and preparation considerations.",
+          "list": "",
+          "table": ""
+        },
+        {
+          "subheading": "Career Options After Class 10 and Class 12",
+          "para": "Explore suitable academic pathways based on your current stage of education, preferred subjects, and long-term interests.",
+          "list": "",
+          "table": ""
+        },
+        {
+          "subheading": "Study Abroad and Medical Education Guidance",
+          "para": "Students considering MBBS abroad or other overseas education options can receive guidance on evaluating countries, universities, admission requirements, and costs.",
+          "list": "",
+          "table": ""
+        },
+        {
+          "subheading": "Education Budget Planning",
+          "para": "Understand the likely costs of different study options and compare them with your family's budget before making a decision.",
+          "list": "",
+          "table": ""
+        },
+        {
+          "subheading": "Future Career Planning",
+          "para": "Build a clearer plan for the next stage of your education by identifying possible courses, relevant skills, and the steps needed to work towards your goals.",
+          "list": "",
+          "table": ""
+        }
+      ]
+    },
+    {
+      "heading": "<h2>How Our Career Counselling Works</h2>",
+      "subcontent": [
+        {
+          "para": "<strong>Step 1: Career Assessment</strong>"
+        },
+        {
+          "para": "We assess your interests, strengths, skills, and academic background to understand your career goals.",
+          "list": "",
+          "table": ""
+        },
+        {
+          "para": "<strong>Step 2: Stream Selection</strong>"
+        },
+        {
+          "para": "We help you choose the right academic stream based on your interests, abilities, and future career plans.",
+          "list": "",
+          "table": ""
+        },
+        {
+          "para": "<strong>Step 3: Alternative Career Planning</strong>"
+        },
+        {
+          "para": "We guide you through alternative career options that match your strengths and offer different pathways for your future growth.",
+          "list": "",
+          "table": ""
+        }
+      ]
+    },
+    {
+      "heading": "<h2>Career Counselling Overview</h2>",
+      "subcontent": [
+        {
+          "subheading": "",
+          "para": "",
+          "list": "",
+          "table": {
+            "note": "",
+            "theading": ["Feature", "Details"],
+            "rows": [
+              { "colum": ["Academic Profile Assessment", "Includes Strengths, Interests & Performance"] },
+              { "colum": ["Stream & Subject Selection", "Guidance for Class 10 & 12 Pathways"] },
+              { "colum": ["Undergraduate Programmes", "Medicine, Engineering, Management (BBA/MBA) & Others"] },
+              { "colum": ["Entrance Examination Support", "Eligibility Rules, Deadlines & Prep Planning"] },
+              { "colum": ["College & University Shortlisting", "Fees, Location, Recognition & Curriculum Analysis"] },
+              { "colum": ["Study Abroad Guidance", "Evaluating Overseas MBBS & Degree Opportunities"] },
+              { "colum": ["Financial Planning", "Education Budget Analysis & Cost Breakdown"] }
+            ]
           }
-        ]
-      },
-      {
-        "heading": "<h2>Make Career Decisions With The Right Guidance</h2>",
-        "subcontent": [
-          {
-            "subheading": "How Our Career Counselling Works",
-            "para": "",
-            "list": "",
-            "table": ""
-          },
-          {
-            "para": "<strong>Step 1: One-to-One Discussion</strong>"
-          },
-          {
-            "para": "We understand your interests, academic background, concerns, and expectations.",
-            "list": "",
-            "table": ""
-          },
-          {
-            "para": "<strong>Step 2: Assess Suitable Options</strong>"
-          },
-          {
-            "para": "We discuss relevant courses and career pathways according to your profile and eligibility.",
-            "list": "",
-            "table": ""
-          },
-          {
-            "para": "<strong>Step 3: Create an Education Plan</strong>"
-          },
-          {
-            "para": "We help you outline the next steps, including entrance examinations, course selection, college research, and application planning.",
-            "list": "",
-            "table": ""
-          },
-          {
-            "para": "<strong>Step 4: Guidance for Your Next Move</strong>"
-          },
-          {
-            "para": "You receive support in understanding your options and making a more informed decision about your education.",
-            "list": "",
-            "table": ""
-          }
-        ]
-      },
-      {
-        "heading": "<h2>Career Counselling Overview</h2>",
-        "subcontent": [
-          {
-            "subheading": "",
-            "para": "",
-            "list": "",
-            "table": {
-              "note": "",
-              "theading": ["Feature", "Details"],
-              "rows": [
-                { "colum": ["Academic Profile Assessment", "Includes Strengths, Interests & Performance"] },
-                { "colum": ["Stream & Subject Selection", "Guidance for Class 10 & 12 Pathways"] },
-                { "colum": ["Undergraduate Programmes", "Medicine, Engineering, Management (BBA/MBA) & Others"] },
-                { "colum": ["Entrance Examination Support", "Eligibility Rules, Deadlines & Prep Planning"] },
-                { "colum": ["College & University Shortlisting", "Fees, Location, Recognition & Curriculum Analysis"] },
-                { "colum": ["Study Abroad Guidance", "Evaluating Overseas MBBS & Degree Opportunities"] },
-                { "colum": ["Financial Planning", "Education Budget Analysis & Cost Breakdown"] }
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "heading": "<h2>Benefits Of Career Counselling</h2>",
-        "subcontent": [
-          {
-            "subheading": "",
-            "para": "",
-            "list": [
-              "Personalised profile analysis tailored to individual academic strengths.",
-              "Clear direction for selecting subjects, streams, and degree courses.",
-              "Detailed insights into entrance exam requirements and application timelines.",
-              "Comparative evaluation of top colleges, universities, and fee structures.",
-              "Guidance for medical (NEET), engineering (B.Tech), management, and study abroad routes.",
-              "Structured financial planning to align educational costs with family budgets."
-            ],
-            "table": ""
-          }
-        ]
-      },
-      {
-        "heading": "<h2>Why Choose Pradeep Career Coach For Career Counselling?</h2>",
-        "subcontent": [
-          {
-            "subheading": "",
-            "para": "A good career decision begins with understanding your options. Pradeep Career Coach helps students and parents evaluate suitable pathways, ask the right questions, and plan their next steps with confidence.",
-            "list": "",
-            "table": ""
-          },
-          {
-            "subheading": "",
-            "para": "We offer unbiased, personalised guidance based strictly on each student's personal interests, capabilities, and individual academic profile.",
-            "list": "",
-            "table": ""
-          },
-          {
-            "subheading": "",
-            "para": "Get clear, straightforward explanations about courses, college environments, admission processes, and long-term career prospects.",
-            "list": "",
-            "table": ""
-          },
-          {
-            "subheading": "",
-            "para": "We provide a practical, structured framework for comparing educational pathways and managing costs to build a realistic roadmap for academic success.",
-            "list": "",
-            "table": ""
-          }
-        ]
-      }
-    ],
-    "faq": [
-      {
-        "que": "1. Who can benefit from career counselling at Pradeep Career Coach?",
-        "ans": "Class 10 students choosing streams, Class 12 students evaluating degree courses, NEET and B.Tech aspirants, management candidates (BBA/MBA), study abroad applicants, and parents seeking educational clarity."
-      },
-      {
-        "que": "2. When is the best time to seek career counselling?",
-        "ans": "It is ideal to seek guidance when making key transitions, such as choosing streams in Class 10, preparing for entrance exams in Class 11 and 12, or shortlisting colleges for higher education."
-      },
-      {
-        "que": "3. How does career counselling help in selecting the right stream or course?",
-        "ans": "Career counselling evaluates your academic strengths, subject preferences, aptitude, and long-term goals to recommend streams and courses where you are most likely to succeed."
-      },
-      {
-        "que": "4. Can Pradeep Career Coach help with education budget planning?",
-        "ans": "Yes, we help families understand the overall tuition, hostel, and indirect expenses of various institutions so they can make informed financial decisions without hidden surprises."
-      }
-    ]
+        }
+      ]
+    },
+    {
+      "heading": "<h2>Who Can Benefit from Career Counselling?</h2>",
+      "subcontent": [
+        {
+          "subheading": "",
+          "para": "",
+          "list": [
+            "Class 10 students deciding which stream to choose for further studies.",
+            "Class 12 students comparing undergraduate courses and entrance examinations.",
+            "NEET aspirants considering medical education options in India or abroad.",
+            "Engineering aspirants choosing B.Tech specialisations and colleges.",
+            "Students considering management programmes such as BBA, MBA, or integrated management courses.",
+            "Parents who want to understand education options, costs, and admission requirements before supporting a decision."
+          ],
+          "table": ""
+        }
+      ]
+    },
+    {
+      "heading": "<h2>Why Choose Pradeep Career Coach For Career Counselling?</h2>",
+      "subcontent": [
+        {
+          "subheading": "",
+          "para": "Guidance based on each student's interests and academic profile.",
+          "list": "",
+          "table": ""
+        },
+        {
+          "subheading": "",
+          "para": "Clear explanations of courses, colleges, and admission options.",
+          "list": "",
+          "table": ""
+        },
+        {
+          "subheading": "",
+          "para": "Support for comparing educational pathways and related costs.",
+          "list": "",
+          "table": ""
+        },
+        {
+          "subheading": "",
+          "para": "A practical approach to planning academic and career goals.",
+          "list": "",
+          "table": ""
+        }
+      ]
+    },
+    {
+      "heading": "<h2>Take the First Step Towards a Clearer Career Plan</h2>",
+      "subcontent": [
+        {
+          "subheading": "",
+          "para": "A good career decision begins with understanding your options. Pradeep Career Coach helps students and parents evaluate suitable pathways, ask the right questions, and plan their next steps with confidence.",
+          "list": "",
+          "table": ""
+        },
+        {
+          "subheading": "",
+          "para": "Book a career counselling session to discuss your educational goals.",
+          "list": "",
+          "table": ""
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "que": "1. Who can benefit from career counselling at Pradeep Career Coach?",
+      "ans": "Class 10 students choosing streams, Class 12 students evaluating degree courses, NEET and B.Tech aspirants, management candidates (BBA/MBA), study abroad applicants, and parents seeking educational clarity."
+    },
+    {
+      "que": "2. When is the best time to seek career counselling?",
+      "ans": "It is ideal to seek guidance when making key transitions, such as choosing streams in Class 10, preparing for entrance exams in Class 11 and 12, or shortlisting colleges for higher education."
+    },
+    {
+      "que": "3. How does career counselling help in selecting the right stream or course?",
+      "ans": "Career counselling evaluates your academic strengths, subject preferences, aptitude, and long-term goals to recommend streams and courses where you are most likely to succeed."
+    },
+    {
+      "que": "4. Can Pradeep Career Coach help with education budget planning?",
+      "ans": "Yes, we help families understand the overall tuition, hostel, and indirect expenses of various institutions so they can make informed financial decisions without hidden surprises."
+    }
+  ]
   },
   {
     "img": bba,

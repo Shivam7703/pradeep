@@ -4,6 +4,8 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FiChevronDown, FiChevronRight, FiMenu, FiX, FiPhoneCall } from 'react-icons/fi'
+import { logo } from '@/assets'
+import Image from 'next/image'
 
 export type NavItem = {
   name: string
@@ -18,9 +20,10 @@ const navLinks: NavItem[] = [
     name: 'Services',
     href: '/services',
     subnav: [
-      { name: 'MBBS In Abroad', href: '/services/mbbs-abroad' },
+    
       { name: 'MBBS In India', href: '/services/mbbs-in-india' },
       { name: 'Btech Admission', href: '/services/b-tech-admission' },
+        { name: 'MBBS In Abroad', href: '/services/mbbs-abroad' },
       {
         name: 'Management Course Admissions',
         href: '/services/management-admissions',
@@ -50,17 +53,11 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm shadow-zinc-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex min-h-20 items-center justify-between">
           {/* Logo */}
           <div className="shrink-0">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-600 text-2xl font-bold text-white shadow-md shadow-blue-500/20">
-                Pc
-              </div>
-              <span className="mt-1 text-2xl font-bold leading-[0.8] text-zinc-800">
-                Pradeep <br />
-                <span className="text-lg font-medium text-blue-600">Consultancy</span>
-              </span>
+            <Link href="/" className="py-2">
+              <Image src={logo} alt="Logo" className="max-w-46 w-[30vw]  object-contain" />
             </Link>
           </div>
 

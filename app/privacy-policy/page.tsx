@@ -123,7 +123,7 @@ const contactDetails = [
   { label: "Organisation", value: "Pradeep Career Coach" },
   { label: "Email", value: "info@careercoachpradeep.com", href: "mailto:info@careercoachpradeep.com" },
   { label: "Phone", value: "+91-8510930478", href: "tel:+918510930478" },
-  { label: "Website", value: "Insert official website URL" },
+  { label: "Website", value: "https://careercoachpradeep.com/" },
   { label: "Address", value: "Vasant Kunj, New Delhi - 110070" },
 ];
 

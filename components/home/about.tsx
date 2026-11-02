@@ -38,7 +38,7 @@ export default function AboutUs(): React.JSX.Element {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 md:gap-20 items-center max-w-7xl mx-auto">
 
         {/* Left Column: Creative Animated Image Collage */}
-        <div className="lg:col-span-6 relative h-105 sm:h-115 md:h-135 w-full flex items-center justify-center">
+        <div className="lg:col-span-6 relative h-90 sm:h-115 md:h-135 w-full flex items-center justify-center">
 
           <div className="relative w-full h-full">
 
@@ -48,14 +48,13 @@ export default function AboutUs(): React.JSX.Element {
               whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="absolute top-0 left-0 sm:left-4 w-[85%] h-full rounded-2xl mx-auto md:rounded-3xl overflow-hidden shadow-xl border-4 border-white z-10"
+              className=" w-[85%] h-full rounded-2xl mx-auto  md:rounded-3xl  overflow-hidden shadow-xl border-4 border-white z-10"
             >
               <Image
                 src={about as StaticImageData | string}
                 alt="Online Students Learning"
-                fill
+               
                 className="object-cover object-top"
-                sizes="(max-width: 1024px) 70vw, 35vw"
                 priority
               />
             </motion.div>

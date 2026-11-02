@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+import Image from 'next/image'
 import {
   FiMapPin,
   FiPhoneCall,
@@ -12,6 +12,7 @@ import {
   FiLinkedin,
   FiYoutube
 } from 'react-icons/fi'
+import { logo } from '@/assets'
 
 type FooterLink = {
   name: string
@@ -52,15 +53,8 @@ export default function Footer() {
 
           {/* Brand Info (2 Columns on Large Screens) */}
           <div className="lg:col-span-2 space-y-4">
-            <Link href="/" className="inline-flex items-center gap-2">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white text-2xl font-bold text-blue-600 shadow-md shadow-blue-500/20">
-                Pc
-              </div>
-              <span className="mt-1 text-2xl font-bold leading-[0.8] text-zinc-100">
-                Pradeep <br />
-                <span className="text-lg font-medium text-white">Consultancy</span>
-              </span>
-            </Link>
+            <Link href="/" className="">
+ <Image src={logo} alt="Logo" className="max-w-46 w-[70vw] mb-4 object-contain brightness-0 invert" />           </Link>
 
             <p className="max-w-sm text-sm text-gray-50 leading-relaxed">
               Providing expert educational counseling and admission guidance for medical, engineering, and management courses in India and abroad.

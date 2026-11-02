@@ -1,6 +1,8 @@
 import banner1 from "@/assets/home/banner1.png";
-import banner2 from "@/assets/home/banner2.png";
+import banner2 from "@/assets/home/banner 2.png";
 import globalbanner from "@/assets/home/globalbanner.jpg";
+import logo from "@/assets/home/logo.png";
+
 
 import about from "@/assets/home/about.jpg";
 import about2 from "@/assets/home/about2.jpg";
@@ -20,4 +22,4 @@ import mbbsindia from "@/assets/home/mbbs-in-india.webp";
 
 
 
-export{banner1,banner2,globalbanner,about,about2,about3,about1,analytics,bba,bcom,btech,career,finance,marketing,mbbsabroad,mbbsindia};
+export{logo,banner1,banner2,globalbanner,about,about2,about3,about1,analytics,bba,bcom,btech,career,finance,marketing,mbbsabroad,mbbsindia};
