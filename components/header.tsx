@@ -70,20 +70,19 @@ export default function Header() {
 
           {/* Right Side Buttons */}
           <div className="hidden items-center gap-4 lg:flex">
-            <Link
-              href="/contact-us"
+            <a
+              href="tel:+91-8510930478"
               className="flex items-center gap-2 rounded-3xl border border-blue-600 px-4 py-2.5 text-sm font-semibold text-gray-700 transition-colors hover:text-blue-600"
             >
               <FiPhoneCall className="h-4 w-4 text-blue-600" />
               <span>Call Now</span>
-            </Link>
+            </a>
 
-            <Link
-              href="/apply"
+            <a
+              href="https://sites.careercoachpradeep.com/"
               className="rounded-full bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-blue-500/20 transition-all duration-200 hover:bg-orange-600 hover:shadow-lg hover:shadow-blue-500/30"
-            >
-              Apply Now
-            </Link>
+            >Register for Webinar
+            </a>
           </div>
 
           {/* Mobile Hamburger Button */}
@@ -117,13 +116,13 @@ export default function Header() {
               ))}
 
               <div className="mt-2 flex flex-col gap-3 border-t border-gray-100 pt-4">
-                <Link
-                  href="/apply"
+                <a
+                  href="https://sites.careercoachpradeep.com/"
                   onClick={closeMobileMenu}
                   className="w-full rounded-xl bg-blue-600 py-3 text-center text-sm font-semibold text-white shadow-md shadow-blue-500/20 transition-colors hover:bg-blue-700"
                 >
-                  Apply Now
-                </Link>
+                  Register for Webinar
+                </a>
               </div>
             </div>
           </motion.div>

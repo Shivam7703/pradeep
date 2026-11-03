@@ -107,10 +107,10 @@ Find popular courses and career options that match your interests, develop your 
           </div>
 
           <a
-            href="#categories"
+            href="/contact-us"
             className="inline-flex items-center justify-center border border-zinc-300 hover:border-zinc-400 bg-white text-zinc-800 font-semibold px-5 py-2.5 rounded-md text-sm transition-colors shadow-sm self-start md:self-auto shrink-0"
           >
-            View All Categories
+            Get Detailed Course Info <LuArrowRight className="w-4 h-4 ml-1" />
           </a>
         </div>
 

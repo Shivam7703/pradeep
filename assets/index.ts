@@ -26,7 +26,15 @@ import russ from "@/assets/home/rus.jpg";
 import uzb from "@/assets/home/uzb.jpg";
 import maur from "@/assets/home/maur.jpg";
 
+import learn from "@/assets/home/learn.jpg";
+import skildev from "@/assets/home/skill dev.jpg";
+import webinar from "@/assets/home/webinar.jpg";
+import mentor from "@/assets/home/mentorship.jpg";
+import globlc from "@/assets/home/globlcareer.jpg";
+
+import cl1 from "@/assets/home/cl1.jpg";
+import cl2 from "@/assets/home/cl2.jpg";
+import cl3 from "@/assets/home/cl3.jpg";
 
 
-
-export{logo,banner1,banner2,globalbanner,about,about2,about3,about1,analytics,bba,bcom,btech,career,finance,marketing,mbbsabroad,mbbsindia, ind,georg,kyr,kazak,russ,uzb,maur};
+export{logo,banner1,banner2,globalbanner,about,about2,about3,about1,analytics,bba,bcom,btech,career,finance,marketing,mbbsabroad,mbbsindia, ind,georg,kyr,kazak,russ,uzb,maur, learn,skildev,webinar,mentor,globlc,cl1,cl2,cl3};

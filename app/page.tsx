@@ -6,6 +6,7 @@ import AdmissionsIndiaSection from "@/components/home/engadmission";
 import WorkProcess from "@/components/home/process";
 import OurServices from "@/components/home/services";
 import HomeBanner from "@/components/home/homebanner";
+import Testimonials from "@/components/home/testimonial";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <HomeBanner />
       <AboutUs />
       <OurServices />
-      <MbbsCountrySlider /><AdmissionsIndiaSection /><TrendingCategoriesSlider /><WorkProcess /><BlogSection />
+      <MbbsCountrySlider /><AdmissionsIndiaSection /><Testimonials/><TrendingCategoriesSlider /><WorkProcess /><BlogSection />
     </div>
   );
 }

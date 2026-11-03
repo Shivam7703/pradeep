@@ -174,9 +174,9 @@ From choosing the right course to securing admission at your preferred college, 
             </p>
           </div>
 
-          <Link href="/contact-us" className="bg-white hover:bg-zinc-100 text-blue-600 font-bold px-6 py-3 rounded-xl text-sm shadow transition-all shrink-0">
+          <a href="tel:+918510930478" className="bg-white hover:bg-zinc-100 text-blue-600 font-bold px-6 py-3 rounded-xl text-sm shadow transition-all shrink-0">
             Book Free Counseling
-          </Link>
+          </a>
         </motion.div>
 
       </div>

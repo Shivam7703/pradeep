@@ -23,8 +23,8 @@ const quickLinks: FooterLink[] = [
   { name: 'Home', href: '/' },
   { name: 'About Us', href: '/about' },
   { name: 'Blogs', href: '/blogs' },
+  { name: 'Services', href: '/services' },
   { name: 'Privacy Policy', href: '/privacy-policy' },
-  { name: 'Terms of Service', href: '/terms' },
   { name: 'Contact Us', href: '/contact' },
 ]
 

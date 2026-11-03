@@ -8,6 +8,9 @@ import { banner1, banner2 } from '@/assets';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
+// Import React Icons
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -20,7 +23,7 @@ export default function HomeBanner() {
   ];
 
   return (
-    <div className="w-full relative overflow-hidden">
+    <div className="w-full relative overflow-hidden group">
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={0}
@@ -31,21 +34,33 @@ export default function HomeBanner() {
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
-        navigation={true}
+        navigation={{
+          nextEl: '.swiper-button-next-custom',
+          prevEl: '.swiper-button-prev-custom',
+        }}
         className="w-full h-full"
       >
         {slides.map((slide) => (
-          <SwiperSlide key={slide.id} className=" w-full h-full">
+          <SwiperSlide key={slide.id} className="w-full h-full">
             <Image
               src={slide.src}
               alt={slide.alt}
-            
-              priority={slide.id === 1} // Preload the first banner for LCP optimization
+              priority={slide.id === 1}
               className="object-contain w-screen h-full"
             />
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {/* Custom Previous Button with React Icons */}
+      <div className="swiper-button-prev-custom hidden md:flex items-center justify-center absolute left-4 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow-md cursor-pointer hover:bg-gray-100 transition-all">
+        <IoIosArrowBack className="text-2xl text-gray-800" />
+      </div>
+
+      {/* Custom Next Button with React Icons */}
+      <div className="swiper-button-next-custom hidden md:flex items-center justify-center absolute right-4 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow-md cursor-pointer hover:bg-gray-100 transition-all">
+        <IoIosArrowForward className="text-2xl  text-gray-800" />
+      </div>
     </div>
   );
 }

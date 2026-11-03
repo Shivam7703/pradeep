@@ -4,13 +4,14 @@ import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { banner1, banner2 } from '@/assets';
+import { learn,skildev,webinar,mentor,globlc, mbbsindia } from '@/assets';
 
 // Import Swiper core and module styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { HiOutlineAcademicCap, HiOutlineVideoCamera, HiOutlineUserGroup, HiOutlineBadgeCheck, HiOutlineClock, HiOutlineBriefcase } from 'react-icons/hi';
+import Link from 'next/link';
 
 const headerVariants: Variants = {
   hidden: { opacity: 0, y: -20 },
@@ -23,24 +24,24 @@ const headerVariants: Variants = {
 
 export default function OurServices() {
 const services = [
-  {
+ {
     id: 1,
-    title: 'Flexible Online Degrees',
-    category: 'Quality Education | Flexible Learning',
-    description: 'Pursue bachelor’s and master’s degree programs with flexible study schedules and learning opportunities from reputed universities.',
-    image: banner1,
-    tag: 'Degree Program',
-    stats: '98% Pass Rate',
+    title: 'MBBS in India',
+    category: 'Medical Education | Career Guidance',
+    description: 'Explore MBBS admission opportunities in India, understand NEET-UG requirements, eligibility criteria, counselling procedures, and available medical colleges to make informed decisions about your medical career.',
+    image: mbbsindia,
+    tag: 'Medical Career',
+    stats: 'NEET-UG Guidance',
     icon: <HiOutlineAcademicCap className="w-5 h-5 text-blue-600" />,
   },
   {
     id: 2,
-    title: 'Live Online Classes',
-    category: 'Live Learning | Expert Guidance',
-    description: 'Attend interactive online classes led by experienced educators, ask questions in real time, and learn through engaging discussions.',
-    image: banner2,
-    tag: 'Live Sessions',
-    stats: '24/7 Learning Access',
+    title: 'Free Career Guidance Webinar',
+    category: 'Live Webinar | Expert Career Guidance',
+    description: 'Join interactive career guidance webinars led by Career Coach Pradeep. Discover your strengths, explore career opportunities, understand different academic pathways, and learn how to build a practical Plan A, B & C for your future.',
+    image: webinar,
+    tag: 'Free Webinar',
+    stats: 'Live Expert Sessions',
     icon: <HiOutlineVideoCamera className="w-5 h-5 text-blue-600" />,
   },
   {
@@ -48,7 +49,7 @@ const services = [
     title: 'Personalised Mentorship',
     category: 'Personal Guidance | Career Development',
     description: 'Receive individual guidance, career advice, and support from experienced professionals to build your skills and plan your career path.',
-    image: banner1,
+    image: mentor,
     tag: '1-on-1 Guidance',
     stats: '100+ Mentors',
     icon: <HiOutlineUserGroup className="w-5 h-5 text-blue-600" />,
@@ -58,7 +59,7 @@ const services = [
     title: 'Professional Skill Development',
     category: 'Practical Training | Skill Development',
     description: 'Learn in-demand skills in technology, business, and design through practical projects, structured training, and certification programs.',
-    image: banner2,
+    image: skildev,
     tag: 'Certification',
     stats: 'Hands-On Learning',
     icon: <HiOutlineBadgeCheck className="w-5 h-5 text-blue-600" />,
@@ -68,7 +69,7 @@ const services = [
     title: 'Learn Anytime, Anywhere',
     category: 'Flexible Study | Learn at Your Pace',
     description: 'Access recorded lessons, practice quizzes, and useful study materials at your convenience while learning at a pace that suits you.',
-    image: banner1,
+    image: learn,
     tag: 'Self Paced',
     stats: '500+ Hours of Learning',
     icon: <HiOutlineClock className="w-5 h-5 text-blue-600" />,
@@ -78,14 +79,13 @@ const services = [
     title: 'Global Career Opportunities',
     category: 'Career Assistance | Job Readiness',
     description: 'Prepare for job opportunities with resume support, mock interviews, and guidance to connect with potential employers worldwide.',
-    image: banner2,
+    image: globlc,
     tag: 'Career Support',
     stats: '85% Hired',
     icon: <HiOutlineBriefcase className="w-5 h-5 text-blue-600" />,
   },
 ];
 
- 
 
   return (
     <section className="relative w-full px-4 py-7 md:p-14 lg:px-20 bg-white overflow-hidden ">
@@ -223,7 +223,7 @@ We offer a range of learning solutions designed to help students and professiona
                     </div>
 
                     {/* Card Footer / CTA */}
-                    <div className="pt-4 border-t border-gray-100 flex items-center justify-between">
+                    <Link href={"/contact-us"} className="pt-4 border-t border-gray-100 flex items-center justify-between">
                       <span className="text-sm font-bold text-blue-600 group-hover:text-blue-700 transition-colors">
                         Learn More
                       </span>
@@ -233,7 +233,7 @@ We offer a range of learning solutions designed to help students and professiona
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                 </motion.div>
               </SwiperSlide>

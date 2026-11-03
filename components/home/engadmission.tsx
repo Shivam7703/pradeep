@@ -12,8 +12,8 @@ import {
   LuArrowRight,
   LuShieldCheck,
   LuUserCheck,
-  LuX
 } from 'react-icons/lu';
+import AdmissionModal from '../global/modal';
 
 interface HighlightPoint {
   title: string;
@@ -40,26 +40,26 @@ const admissionsData: AdmissionCategory[] = [
     highlights: [
       {
         title: 'National & State-Level Entrance Exams',
-        desc: 'Get admission guidance for exams such as JEE Main, JEE Advanced, MHT-CET, WBJEE, COMEDK, and KCET.'
+        desc: 'Get admission guidance for exams such as JEE Main, JEE Advanced, MHT-CET, WBJEE, COMEDK, and KCET.',
       },
       {
         title: 'Leading Private Universities',
-        desc: 'Explore admission options at private universities through entrance exams like BITSAT, VITEEE, SRMJEEE, MET, and KIITEE.'
+        desc: 'Explore admission options at private universities through entrance exams like BITSAT, VITEEE, SRMJEEE, MET, and KIITEE.',
       },
       {
         title: 'Popular Engineering Specializations',
-        desc: 'Choose from in-demand fields such as Computer Science, AI & Machine Learning, Data Science, Cyber Security, Robotics, and VLSI.'
+        desc: 'Choose from in-demand fields such as Computer Science, AI & Machine Learning, Data Science, Cyber Security, Robotics, and VLSI.',
       },
       {
         title: 'Eligibility Requirements',
-        desc: 'Students generally need 45%–60% aggregate marks in Class 12 PCM (Physics, Chemistry, and Mathematics), along with the required entrance exam qualification, depending on the institution.'
+        desc: 'Students generally need 45%–60% aggregate marks in Class 12 PCM (Physics, Chemistry, and Mathematics), along with the required entrance exam qualification, depending on the institution.',
       },
       {
         title: 'Management & NRI Quota Admissions',
-        desc: 'Get guidance on admission opportunities through institutional-level, management, and NRI quota seats at eligible colleges, subject to their admission policies.'
-      }
+        desc: 'Get guidance on admission opportunities through institutional-level, management, and NRI quota seats at eligible colleges, subject to their admission policies.',
+      },
     ],
-    popularColleges: ['IITs / NITs / IIITs', 'BITS Pilani', 'VIT Vellore', 'Manipal Institute (MIT)', 'SRM Institute']
+    popularColleges: ['IITs / NITs / IIITs', 'BITS Pilani', 'VIT Vellore', 'Manipal Institute (MIT)', 'SRM Institute'],
   },
   {
     id: 'management',
@@ -70,27 +70,27 @@ const admissionsData: AdmissionCategory[] = [
     highlights: [
       {
         title: 'Top Management Entrance Exams',
-        desc: 'Get admission guidance for exams such as CAT, XAT, CMAT, MAT, NMAT, SNAP, and ATMA based on your overall percentile and college preferences.'
+        desc: 'Get admission guidance for exams such as CAT, XAT, CMAT, MAT, NMAT, SNAP, and ATMA based on your overall percentile and college preferences.',
       },
       {
         title: 'Undergraduate Management Programs',
-        desc: 'Explore BBA and five-year Integrated Programme in Management (IPM) options through IPMAT, JIPMAT, CUET-UG, and NPAT.'
+        desc: 'Explore BBA and five-year Integrated Programme in Management (IPM) options through IPMAT, JIPMAT, CUET-UG, and NPAT.',
       },
       {
         title: 'Popular Management Specializations',
-        desc: 'Choose from key fields such as Marketing, Finance, Business Analytics, Human Resources, Operations, and Supply Chain Management.'
+        desc: 'Choose from key fields such as Marketing, Finance, Business Analytics, Human Resources, Operations, and Supply Chain Management.',
       },
       {
         title: 'Admission & Selection Preparation',
-        desc: 'Prepare for every stage of the admission process with guidance for Group Discussions (GD), Written Ability Tests (WAT), and Personal Interviews (PI).'
+        desc: 'Prepare for every stage of the admission process with guidance for Group Discussions (GD), Written Ability Tests (WAT), and Personal Interviews (PI).',
       },
       {
         title: 'Career & Placement Guidance',
-        desc: 'Get help identifying institutes with industry connections, corporate exposure, and placement opportunities that align with your career goals.'
-      }
+        desc: 'Get help identifying institutes with industry connections, corporate exposure, and placement opportunities that align with your career goals.',
+      },
     ],
-    popularColleges: ['IIMs (CAT Required)', 'XLRI Jamshedpur', 'NMIMS Mumbai', 'SIBM Pune', 'Great Lakes']
-  }
+    popularColleges: ['IIMs (CAT Required)', 'XLRI Jamshedpur', 'NMIMS Mumbai', 'SIBM Pune', 'Great Lakes'],
+  },
 ];
 
 export default function AdmissionsIndiaSection(): React.JSX.Element {
@@ -99,16 +99,9 @@ export default function AdmissionsIndiaSection(): React.JSX.Element {
 
   const currentData = admissionsData.find((item) => item.id === activeTab) || admissionsData[0];
 
-  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
-    e.preventDefault();
-    alert('Enquiry submitted!');
-    setIsModalOpen(false);
-  };
-
   return (
     <section className="bg-zinc-50 px-4 py-7 md:p-14 lg:px-20">
       <div className="max-w-7xl mx-auto">
-
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="inline-flex items-center gap-1.5 py-1 px-3.5 rounded-full text-xs font-semibold bg-blue-100 text-blue-800 mb-3">
@@ -118,7 +111,9 @@ export default function AdmissionsIndiaSection(): React.JSX.Element {
             Engineering & Management <span className="text-orange-600">Admissions Made Easier</span>
           </h2>
           <p className="mt-3 text-base text-zinc-600">
-            Get expert guidance for B.Tech, MBA, BBA, and PGDM admissions at reputed colleges across India. Receive support with entrance exams, college selection, and the admission process to help you choose the right path for your future.
+            Get expert guidance for B.Tech, MBA, BBA, and PGDM admissions at reputed colleges across India. Receive
+            support with entrance exams, college selection, and the admission process to help you choose the right path
+            for your future.
           </p>
         </div>
 
@@ -131,10 +126,11 @@ export default function AdmissionsIndiaSection(): React.JSX.Element {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center gap-2.5 px-6 py-3 rounded-lg font-semibold text-sm transition-all ${activeTab === tab.id
-                    ? 'bg-white text-blue-600 shadow-md'
-                    : 'text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100/50'
-                    }`}
+                  className={`flex items-center gap-2.5 px-6 py-3 rounded-lg font-semibold text-sm transition-all ${
+                    activeTab === tab.id
+                      ? 'bg-white text-blue-600 shadow-md'
+                      : 'text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100/50'
+                  }`}
                 >
                   <Icon className="w-4 h-4" />
                   {tab.title.split(' ')[0]} Admissions
@@ -147,16 +143,13 @@ export default function AdmissionsIndiaSection(): React.JSX.Element {
         {/* Main Content Card */}
         <div className="bg-white rounded-2xl shadow-xl border border-zinc-100 overflow-hidden">
           <div className="p-6 sm:p-10">
-
             {/* Card Title & Badge */}
             <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-zinc-100">
               <div>
                 <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
                   {currentData.badge} Program
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-zinc-900 mt-1">
-                  {currentData.title}
-                </h3>
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-zinc-900 mt-1">{currentData.title}</h3>
                 <p className="text-sm text-zinc-500 mt-0.5">{currentData.subtitle}</p>
               </div>
 
@@ -180,12 +173,8 @@ export default function AdmissionsIndiaSection(): React.JSX.Element {
                       <LuCheckCheck className="w-5 h-5 shrink-0" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-zinc-900 text-sm sm:text-base">
-                        {point.title}
-                      </h4>
-                      <p className="text-xs sm:text-sm text-zinc-600 mt-1 leading-relaxed">
-                        {point.desc}
-                      </p>
+                      <h4 className="font-bold text-zinc-900 text-sm sm:text-base">{point.title}</h4>
+                      <p className="text-xs sm:text-sm text-zinc-600 mt-1 leading-relaxed">{point.desc}</p>
                     </div>
                   </div>
                 </div>
@@ -208,7 +197,6 @@ export default function AdmissionsIndiaSection(): React.JSX.Element {
                 ))}
               </div>
             </div>
-
           </div>
         </div>
 
@@ -236,53 +224,10 @@ export default function AdmissionsIndiaSection(): React.JSX.Element {
             </div>
           </div>
         </div>
-
       </div>
 
-      {/* Direct Admission Lead Modal */}
-      {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-zinc-900/60 backdrop-blur-sm p-4">
-          <div className="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl relative">
-            <button
-              onClick={() => setIsModalOpen(false)}
-              className="absolute top-4 right-4 text-zinc-400 hover:text-zinc-600 p-1"
-            >
-              <LuX className="w-5 h-5" />
-            </button>
-
-            <h3 className="text-xl font-bold text-zinc-900">Enquire for Admissions</h3>
-            <p className="text-xs text-zinc-500 mt-1 mb-4">
-              Get detailed college cut-offs, fee structures, and seat matrix information.
-            </p>
-
-            <form onSubmit={handleFormSubmit} className="space-y-3">
-              <div>
-                <label className="block text-xs font-medium text-zinc-700 mb-1">Student Name</label>
-                <input required type="text" placeholder="Enter full name" className="w-full px-3 py-2 border border-zinc-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none" />
-              </div>
-              <div>
-                <label className="block text-xs font-medium text-zinc-700 mb-1">Phone / WhatsApp</label>
-                <input required type="tel" placeholder="+91-8510930478" className="w-full px-3 py-2 border border-zinc-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none" />
-              </div>
-              <div>
-                <label className="block text-xs font-medium text-zinc-700 mb-1">Course Interested In</label>
-                <select className="w-full px-3 py-2 border border-zinc-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                  <option>B.Tech / Engineering</option>
-                  <option>MBA / PGDM</option>
-                  <option>BBA / IPMAT</option>
-                  <option>M.Tech</option>
-                </select>
-              </div>
-              <button
-                type="submit"
-                className="w-full mt-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 rounded-lg text-sm shadow transition"
-              >
-                Request Free Guidance
-              </button>
-            </form>
-          </div>
-        </div>
-      )}
+      {/* External Modal Component */}
+      <AdmissionModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 }

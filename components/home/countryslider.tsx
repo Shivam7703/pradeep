@@ -3,6 +3,7 @@ import { ind,georg,kyr,kazak,russ,uzb,maur } from '@/assets';
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { LuArrowRight, LuCheck, LuChevronLeft, LuChevronRight, LuClock, LuGraduationCap, LuIndianRupee, } from 'react-icons/lu';
+import AdmissionModal from '../global/modal';
 
 
 const mbbsCountries = [
@@ -145,6 +146,7 @@ const mbbsCountries = [
 export default function MbbsCountrySlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   const activeCountry = mbbsCountries[currentIndex];
 
@@ -274,11 +276,12 @@ export default function MbbsCountrySlider() {
 
               {/* Action Bar */}
               <div className="pt-4 border-t border-zinc-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <button
-                  className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg flex items-center justify-center gap-2 shadow-lg shadow-blue-500/20 transition-all"
-                >
-                  Apply / Inquire for {activeCountry.name} <LuArrowRight className="w-4 h-4" />
-                </button>
+               <button
+  onClick={() => setIsModalOpen(true)}
+  className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg flex items-center justify-center gap-2 shadow-lg shadow-blue-500/20 transition-all cursor-pointer"
+>
+  Apply / Inquire for {activeCountry.name} <LuArrowRight className="w-4 h-4" />
+</button>
 
                 {/* Slider Controls */}
                 <div className="flex items-center gap-2">
@@ -306,6 +309,7 @@ export default function MbbsCountrySlider() {
           </div>
         </div>
       </div>
+            <AdmissionModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 }
