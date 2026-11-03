@@ -91,7 +91,10 @@ export default function ContactSection(): React.JSX.Element {
                       Our Location
                     </h4>
                     <p className="text-sm font-medium text-white mt-0.5">
-                      Vasant Kunj, New Delhi - 110070
+                      Vasant Kunj, New Delhi - 110070,
+                    </p>
+                    <p className="text-sm font-medium text-white mt-0.5">
+                      Dehradun, Uttarakhand, India.
                     </p>
                   </div>
                 </div>

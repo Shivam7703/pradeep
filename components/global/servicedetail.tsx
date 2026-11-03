@@ -186,7 +186,8 @@ export default function Visadetails({ data }: any) {
                     <span className="block text-[10px] uppercase font-semibold text-indigo-200 tracking-wider">
                       Our Location
                     </span>
-                    <p className="font-medium text-white">Vasant Kunj, New Delhi – 110070</p>
+                    <p className="font-medium text-white">Vasant Kunj, New Delhi – 110070,</p>
+                    <p className="font-medium text-white">Dehradun, Uttarakhand, India.</p>
                   </div>
                 </div>
 

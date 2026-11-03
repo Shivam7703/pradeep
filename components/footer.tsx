@@ -119,7 +119,8 @@ export default function Footer() {
             <ul className="mt-4 space-y-3.5 text-sm">
               <li className="flex items-start gap-3 text-gray-50">
                 <FiMapPin className="mt-0.5 h-5 w-5 shrink-0 text-white" />
-                <span>Vasant Kunj, New Delhi - 110070</span>
+                <span>Vasant Kunj, New Delhi - 110070, <br />  Dehradun
+Uttarakhand, India.</span>
               </li>
 
               <li>
