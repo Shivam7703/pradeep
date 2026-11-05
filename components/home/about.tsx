@@ -87,15 +87,15 @@ export default function AboutUs(): React.JSX.Element {
                 ABOUT US
             </h4>
             <h2 className="text-3xl md:text-4xl capitalize  font-semibold text-zinc-900 leading-tight">
-              Grow Your Career with
+Build Your Future with the
 {' '}
-              <span className="text-orange-600">online education</span>
+              <span className="text-orange-600">Right Career Guidance</span>
             </h2>
             <p className="text-zinc-800 leading-relaxed text-sm sm:text-base">
-We help students develop useful skills and gain knowledge through flexible online learning programs designed to support their career growth and academic success.
+            We guide students in choosing the right academic path through expert career counselling, MBBS admissions in India and abroad, and B.Tech admission assistance.
             </p>
-                 <p className="text-zinc-800 leading-relaxed text-sm sm:text-base">
-With expert guidance and industry-focused learning, students can improve their abilities, build confidence, and take the next step towards achieving their career goals.
+             <p className="text-zinc-800 leading-relaxed text-sm sm:text-base">
+             With personalised guidance and admission support, students can make informed decisions, find suitable educational opportunities, and take confident steps towards achieving their career goals.
             </p>
           </motion.div>
 
